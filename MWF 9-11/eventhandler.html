@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <link rel="stylesheet" href="style.css">
+
+<body>
+
+    <div id="box" onmouseover="myfunc()" onmouseout="myout()">
+        <div id="box-1" onmouseover="myfunc1()" onmouseout="myout1()">
+            <div id="box-2" onmouseover="myfunc2()" onmouseout="myout2()"></div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <script>
+
+        function myfunc() {
+            document.getElementById("box").style.backgroundColor = "green";
+        }
+        function myout() {
+            document.getElementById("box").style.backgroundColor = "yellowgreen";
+        }
+        function myfunc1() {
+            let c = document.getElementById('box-1').style.backgroundColor = "Red";
+            console.log(c);
+        }
+        function myout1() {
+            document.getElementById("box-1").style.backgroundColor = "violet";
+        }
+        function myfunc2() {
+            let x = document.getElementById("box-2").style.backgroundColor = "Blue";
+            console.log(x);
+        }
+        function myout2() {
+            document.getElementById("box-2").style.backgroundColor = "tomato";
+        }
+
+    </script>
+
+</body>
+
+</html>
